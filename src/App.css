@@ -41,10 +41,12 @@
 /* my design */
 .container{
   display:flex;
+  width: 100%;
 }
-.sidebar{
+.sidebarArea{
   flex:1;
 }
-.main-area{
+.main-center-area{
   flex:4;
+  margin-top:20px;
 }

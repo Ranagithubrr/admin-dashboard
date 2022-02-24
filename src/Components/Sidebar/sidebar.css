@@ -29,8 +29,15 @@
     color: #232323;;
     background-color: antiquewhite;
 }
+.menus li .links{
+    color:black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
 .menus li div{
     display:flex;
+    align-items: center;
 }
 .menus li span{
     padding-left: 5px;

@@ -1,5 +1,6 @@
 .mainHome{
-    flex:4;
+    /* flex:4; */
+    padding:30px 10px;
 }
 .revinu{
     display: flex;
@@ -7,5 +8,5 @@
 }
 .member-section{
     display:flex;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }

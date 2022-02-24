@@ -11,6 +11,7 @@ import MessageIcon from '@mui/icons-material/Message';
 import RateReviewIcon from '@mui/icons-material/RateReview';
 import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
 import ReportIcon from '@mui/icons-material/Report';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
     return (
@@ -20,10 +21,15 @@ const Sidebar = () => {
                     <h4>Dashboard</h4>
                     <ul className='menus'>
                         <li>
-                            <div><HomeIcon /><span>Home</span></div>
+                            <div><HomeIcon /><span>
+                            <Link to="/home" className='links'>Home</Link>
+                                </span></div>
                         </li>
                         <li>
-                            <div><AnalyticsIcon /><span>Analytics</span></div>
+                            <div><AnalyticsIcon /><span>
+                                <Link to="/analytics" className='links'> Analytics</Link>
+                                
+                                </span></div>
                         </li>
                         <li>
                             <div><AttachMoneyIcon /><span>Sales</span></div>

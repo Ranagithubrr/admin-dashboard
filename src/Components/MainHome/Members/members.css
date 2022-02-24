@@ -6,6 +6,7 @@
     width: 100%;
     margin:10px 0;
     align-items: center;
+    position: relative;
 }
 .members img{
     width:40px;
@@ -14,6 +15,7 @@
 }
 .details{
     margin-left: 10px;
+    width:55%;
 }
 .members h5{
     margin:5px 0;
@@ -23,6 +25,8 @@
     font-size: 14px;
 }
 .button{
+    position: absolute;
+    right: 0;
     padding:3px 15px;
     margin-left: 20px;
     font-size: 13px;

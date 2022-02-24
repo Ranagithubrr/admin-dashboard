@@ -17,6 +17,10 @@
 .logo{
     font-size: 35px;
     font-weight: 600;
+    color:white;
+}
+.logoLink{
+    text-decoration: none;
 }
 .lastR, .leftR{
     color:crimson;
