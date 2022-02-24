@@ -1,0 +1,11 @@
+.mainHome{
+    flex:4;
+}
+.revinu{
+    display: flex;
+    margin-top: 15px;
+}
+.member-section{
+    display:flex;
+    margin-top: 20px;
+}

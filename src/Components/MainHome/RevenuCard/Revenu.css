@@ -1,0 +1,22 @@
+.card {
+    -webkit-box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.84);
+    box-shadow: 0px 0px 8px -3px rgb(0 0 0 / 84%);
+    flex: 1;
+    margin:10px;
+    padding:30px 15px;
+    border-radius: 5px;
+}
+.card h4{
+    font-size: 20px;
+}
+.card h2{
+    font-size: 28px;
+    font-weight: 800;
+}
+.small-text{
+    font-size: 14px;
+    margin-left: 10px;
+}
+.css-i4bv87-MuiSvgIcon-root{
+    font-size: 18px !important;
+}

@@ -1,0 +1,39 @@
+.transaction{
+    flex:2;
+}
+
+
+.profile img{
+    width:40px;
+    height: 40px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.datatable{
+    border-spacing: 20px;
+    width:100%;
+}
+th{
+    text-align-last: left;
+}
+.membername{
+    margin-left: 5px;
+}
+.datatable button{
+    border: none;
+    padding:2px 8px;
+    border-radius: 15px;
+}
+.approved{
+    background-color: #149d284a;
+    color: #477a65;
+}
+.declined{
+    background-color:#db773442;
+    color:#f0690fe5;
+}
+.pending{
+    background-color: #4bd6db62;;
+}

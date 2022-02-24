@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* my design */
+.container{
+  display:flex;
+}
+.sidebar{
+  flex:1;
+}
+.main-area{
+  flex:4;
+}

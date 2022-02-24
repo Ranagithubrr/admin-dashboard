@@ -1,0 +1,42 @@
+.memberArea{
+    flex:1;
+}
+.members{
+    display:flex;
+    width: 100%;
+    margin:10px 0;
+    align-items: center;
+}
+.members img{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+}
+.details{
+    margin-left: 10px;
+}
+.members h5{
+    margin:5px 0;
+    padding:0;
+}
+.members p{
+    font-size: 14px;
+}
+.button{
+    padding:3px 15px;
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    border: none;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+}
+.button:hover{
+    background-color: #e8e8e87a;
+}
+.icon{
+    margin-right: 5px;
+}

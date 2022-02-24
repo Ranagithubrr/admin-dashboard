@@ -1,0 +1,37 @@
+.sidebar{
+    /* height:100vh; */
+}
+.main-area{
+    padding:10px 20px;
+    color:#2b2b2b;
+    border-right: 2px solid gainsboro;
+    margin-top: 20px;
+    overflow: scroll;
+    height: 85vh;
+    width:15%;
+    position: fixed;
+    top:40px;
+    left:0;
+}
+.sidebar-menu{
+    margin-top: 20px;
+}
+.menus{
+    margin:0;
+    padding:0;
+}
+.menus li{
+    list-style: none;
+    padding:5px;
+    cursor: pointer;
+}
+.menus li:active, .menus li:hover{
+    color: #232323;;
+    background-color: antiquewhite;
+}
+.menus li div{
+    display:flex;
+}
+.menus li span{
+    padding-left: 5px;
+}
