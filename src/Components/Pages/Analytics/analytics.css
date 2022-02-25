@@ -1,0 +1,13 @@
+.twoChart{
+    display:flex;
+    width:100%;
+    box-sizing: border-box;
+}
+.twoChart div{
+    margin:10px;
+    padding:10px;
+    width:45%;
+    margin:5% 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './sidebar.css'
 import HomeIcon from '@mui/icons-material/Home';
 import AnalyticsIcon from '@mui/icons-material/Analytics';
@@ -11,73 +11,132 @@ import MessageIcon from '@mui/icons-material/Message';
 import RateReviewIcon from '@mui/icons-material/RateReview';
 import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
 import ReportIcon from '@mui/icons-material/Report';
+import CloseIcon from '@mui/icons-material/Close';
+import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
 
-const Sidebar = () => {
+const Sidebar = (props) => {
+    const changeclass = () => props.MiniLeft()
+    const [icon, setIcon] = useState(true);
+    const [leftwidth, setleftwidth] = useState('main-area');
+    const [display, setDisplay] = useState('show');
+    const [iconMargin, setIconMargin] = useState('closeIcon');
+    const [iconPadding, setIconPadding] = useState('');
+    const iconClicked = () => {
+        icon === true ? setIcon(false) : setIcon(true);
+        leftwidth === 'main-area' ? setleftwidth('mini-area') : setleftwidth('main-area');
+        display === 'show' ? setDisplay('hide') : setDisplay('show');
+        iconMargin === 'closeIcon' ? setIconMargin('barIcon') : setIconMargin('closeIcon');
+        iconPadding === '' ? setIconPadding('padding-right') : setIconPadding('');
+        changeclass();
+    }
+
     return (
         <div className='sidebar'>
-            <div className="main-area">
+            <div className={leftwidth}>
                 <div className="sidebar-menu">
-                    <h4>Dashboard</h4>
+                    <span className={iconMargin} onClick={iconClicked}>
+                        {icon === true ? <CloseIcon className='iconSize' /> : <MenuIcon className='iconSize' />}
+
+                    </span>
+                    <h4 className={display}>Dashboard</h4>
                     <ul className='menus'>
                         <li>
-                            <div><HomeIcon /><span>
-                            <Link to="/home" className='links'>Home</Link>
-                                </span></div>
+                            <div>
+                                <HomeIcon />
+                                <span className={iconPadding}>
+                                    <Link to="/home" className={`links`}>Home</Link>
+                                </span>
+                            </div>
                         </li>
                         <li>
-                            <div><AnalyticsIcon /><span>
-                                <Link to="/analytics" className='links'> Analytics</Link>
-                                
-                                </span></div>
+                            <div>
+                                <AnalyticsIcon />
+                                <span className={iconPadding}>
+                                    <Link to="/analytics" className="links"> Analytics</Link>
+                                </span>
+                            </div>
                         </li>
                         <li>
-                            <div><AttachMoneyIcon /><span>Sales</span></div>
+                            <div>
+                                <AttachMoneyIcon />
+                                <span className={iconPadding}>Sales</span>
+                            </div>
                         </li>
                     </ul>
                 </div>
                 <div className="sidebar-menu">
-                    <h4>Quick menu</h4>
+                    <h4 className={display}>Quick menu</h4>
                     <ul className='menus'>
                         <li>
-                            <div><PersonIcon /><span>Users</span></div>
+                            <div>
+                                <PersonIcon />
+                                <span className={iconPadding}>Users</span>
+                            </div>
                         </li>
                         <li>
-                            <div><ProductionQuantityLimitsIcon /><span>Products</span></div>
+                            <div>
+                                <ProductionQuantityLimitsIcon />
+                                <span className={iconPadding}>Products</span>
+                            </div>
                         </li>
                         <li>
-                            <div><AttachMoneyIcon /><span>Transactions</span></div>
+                            <div>
+                                <AttachMoneyIcon />
+                                <span className={iconPadding}>Transactions</span>
+                            </div>
                         </li>
                         <li>
-                            <div><BarChartIcon /><span>Reports</span></div>
+                            <div>
+                                <BarChartIcon />
+                                <span className={iconPadding}>Reports</span>
+                            </div>
                         </li>
                     </ul>
                 </div>
                 <div className="sidebar-menu">
-                    <h4>Notification</h4>
+                    <h4 className={display}>Notification</h4>
                     <ul className='menus'>
                         <li>
-                            <div><MailIcon /><span>Mail</span></div>
+                            <div>
+                                <MailIcon />
+                                <span className={iconPadding}>Mail</span>
+                            </div>
                         </li>
                         <li>
-                            <div><RateReviewIcon /><span>Feedback</span></div>
+                            <div>
+                                <RateReviewIcon />
+                                <span className={iconPadding}>Feedback</span>
+                            </div>
                         </li>
                         <li>
-                            <div><MessageIcon /><span>Message</span></div>
+                            <div>
+                                <MessageIcon />
+                                <span className={iconPadding}>Message</span>
+                            </div>
                         </li>
                     </ul>
                 </div>
                 <div className="sidebar-menu">
-                    <h4>Stafs</h4>
+                    <h4 className={display}>Stafs</h4>
                     <ul className='menus'>
                         <li>
-                            <div><ManageAccountsIcon /><span>Manage</span></div>
+                            <div>
+                                <ManageAccountsIcon />
+                                <span className={iconPadding}>Manage</span>
+                            </div>
                         </li>
                         <li>
-                            <div><AnalyticsIcon /><span>Analytics</span></div>
+                            <div>
+                                <AnalyticsIcon />
+                                <span className={iconPadding}>Analytics</span>
+                            </div>
                         </li>
                         <li>
-                            <div><ReportIcon /><span>Report</span></div>
+                            <div>
+                                <ReportIcon />
+                                <span className={iconPadding}>Report</span>
+                            </div>
                         </li>
                     </ul>
                 </div>

@@ -1,6 +1,30 @@
 .sidebar{
     /* height:100vh; */
 }
+.closeIcon{
+    display: block;
+    float: right;
+    margin-top:-15px;
+    cursor: pointer;
+}
+.barIcon{
+    display: block;
+    /* float: left; */
+    margin-left:2px;
+    margin-top:-15px;
+    cursor: pointer;
+}
+/* .makeMarginRight{
+    margin-right: -10px;
+    margin-bottom: 5px;
+} */
+.padding-right{
+    padding-left:30px !important;
+    transition: 0.3s;
+}
+.iconSize{
+    font-size: 25px !important;
+}
 .main-area{
     padding:10px 20px;
     color:#2b2b2b;
@@ -11,7 +35,23 @@
     width:15%;
     position: fixed;
     top:40px;
+    left:0; 
+    transition: 0.3s;
+}
+.mini-area{
+    padding:10px 20px;
+    color:#2b2b2b;
+    border-right: 2px solid gainsboro;
+    margin-top: 20px;
+    overflow: scroll;
+    height: 85vh;
+    width:2%;
+    position: fixed;
+    top:40px;
     left:0;
+    transition: 0.3s;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 .sidebar-menu{
     margin-top: 20px;
@@ -41,4 +81,11 @@
 }
 .menus li span{
     padding-left: 5px;
+    transition: 0.3s;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
 }

@@ -24,11 +24,8 @@ const Topbar = () => {
                     </Badge>
                     <Badge badgeContent={3} color="primary" className="icons">
                     <LanguageIcon />
-                   
                     </Badge>
-                    <Badge badgeContent={5} color="primary" className="icons">
-                    <SettingsIcon />
-                    </Badge>
+                    <SettingsIcon className='icons'/>
                     <Avatar className="avatarimg" alt="R" src="https://images.vexels.com/media/users/3/145908/raw/52eabf633ca6414e60a7677b0b917d92-male-avatar-maker.jpg" />
                 </div>
             </div>
