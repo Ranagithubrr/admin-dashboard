@@ -16,9 +16,8 @@ function App() {
   }
   return (
     <>
+
       <Topbar />
-
-
       <div className="container">
         <div className={sideClass}>
           <Sidebar MiniLeft={SideBarClass} />
@@ -29,8 +28,8 @@ function App() {
             <Route path="/" element={<Mainhome />} />
             <Route path="/home" element={<Mainhome />} />
             <Route path="/analytics" element={<Analytics />} />
-
           </Routes>
+
         </div>
 
 

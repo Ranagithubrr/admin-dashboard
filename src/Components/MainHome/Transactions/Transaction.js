@@ -7,13 +7,15 @@ const Transaction = () => {
             <div className="card">
                 <h4>Latest Transactions</h4>
                 <table className='datatable'>
+                    <thead>
                     <tr>
                         <th>Customer</th>
                         <th>Date</th>
                         <th>Ammount</th>
                         <th>Status</th>
                     </tr>
-
+                    </thead>
+                    <tbody>
                     <tr>
                     <td>
                             <div className='profile'>
@@ -60,7 +62,7 @@ const Transaction = () => {
                         <td>$122.00</td>
                         <td><button className='approved'>Approved</button></td>
                     </tr>
-
+                    </tbody>
                 </table>
             </div>
         </div>

@@ -44,3 +44,11 @@
 .icon{
     margin-right: 5px;
 }
+.resetbtn{
+    border:none;
+    background:crimson;
+    color:white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding:3px 10px;
+}

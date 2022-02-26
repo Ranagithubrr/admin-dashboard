@@ -1,3 +1,4 @@
+import { Block } from '@mui/icons-material';
 import React from 'react';
 import { Bar, BarChart, CartesianGrid, Legend, PolarAngleAxis, PolarGrid, PolarRadiusAxis, Radar, RadarChart, RadialBar, RadialBarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import ChartTop from '../../MainHome/Chart/ChartTop';
@@ -63,7 +64,8 @@ const Analytics = () => {
             <ChartTop data={data} displayName="User Analytics" />
             <div className="twoChart">
                 <div className="left">
-                    <ResponsiveContainer width="100%" height="76%">
+                  <h4 className='chartHead'>Sales</h4>
+                    <ResponsiveContainer width="100%" height="60%">
                         <BarChart width={760} height={250} data={data}>
                             <CartesianGrid strokeDasharray="3 3" />
                             <XAxis dataKey="name" />
@@ -76,6 +78,7 @@ const Analytics = () => {
                     </ResponsiveContainer>
                 </div>
                 <div className="right">
+                <h4 className='chartHead'>User's Age</h4>
                 <ResponsiveContainer width="100%" height="76%">
                     <RadialBarChart
                         width={730}
@@ -87,7 +90,7 @@ const Analytics = () => {
                         endAngle={0}
                     >
                         <RadialBar minAngle={15} label={{ fill: '#666', position: 'insideStart' }} background clockWise={true} dataKey='uv' />
-                        <Legend iconSize={10} width={120} height={140} layout='vertical' verticalAlign='middle' align="left" />
+                        <Legend iconSize={10} width={120} height={140} layout='vertical' verticalAlign='center' align="left" />
                         <Tooltip />
                     </RadialBarChart>
                     </ResponsiveContainer>

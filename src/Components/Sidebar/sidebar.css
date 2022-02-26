@@ -11,7 +11,7 @@
     display: block;
     /* float: left; */
     margin-left:2px;
-    margin-top:-15px;
+    /* margin-top:-15px; */
     cursor: pointer;
 }
 /* .makeMarginRight{
@@ -19,7 +19,7 @@
     margin-bottom: 5px;
 } */
 .padding-right{
-    padding-left:30px !important;
+    padding-left:300px !important;
     transition: 0.3s;
 }
 .iconSize{
@@ -54,7 +54,7 @@
     overflow-y: scroll;
 }
 .sidebar-menu{
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 .menus{
     margin:0;
@@ -85,6 +85,7 @@
 }
 .show{
     display: block;
+    margin-top: 20px;
 }
 .hide{
     display: none;
