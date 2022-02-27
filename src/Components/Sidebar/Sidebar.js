@@ -71,7 +71,9 @@ const Sidebar = (props) => {
                         <li>
                             <div>
                                 <PersonIcon />
-                                <span className={iconPadding}>Users</span>
+                                <span className={iconPadding}>
+                                <Link to="/users" className="links">  Users</Link>
+                                    </span>
                             </div>
                         </li>
                         <li>

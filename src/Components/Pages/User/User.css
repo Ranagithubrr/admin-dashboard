@@ -1,0 +1,45 @@
+.userPhoto{
+    height:40px;
+    width:40px;
+    margin-right: 10px;
+}
+.userNameAndPhoto,.activeStatus, .actionArea{
+    display: flex;
+    align-items: center;
+}
+.active{
+    height:10px;
+    width:10px;
+    border-radius: 50%;
+    background-color: green;
+    margin-right: 5px;
+}
+.deactive{
+    height:10px;
+    width:10px;
+    border-radius: 50%;
+    background-color: #979595;
+    margin-right: 5px;
+}
+.editBtn{
+    border:none;
+    outline:none;
+    background:#38A872;
+    color:white;
+    padding:2px 15px;
+    border-radius: 5px;
+    cursor:pointer;
+    margin-right: 10px;
+
+}
+.editBtn:hover{
+    background-color: green;
+}
+.delBtn{
+    font-size: 25px !important;
+    color:darkgrey;
+    cursor: pointer;
+}
+.delBtn:hover{
+    color:red;
+}
