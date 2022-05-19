@@ -1,8 +1,8 @@
 .accountRetention{
     border:1px solid #dfdedec0;
-    padding:20px;
+    padding:15px;
 }
-.accountRetention h5{
+.accountRetention h4{
     font-size:16px;
     margin:0;
 }
@@ -11,4 +11,30 @@
     margin:0;
     color:#8392a5;
     padding-top:5px;
+}
+.accountRetensionMid{
+    margin-top:15px;
+}
+.accountRetensionBottom{
+    display: flex;
+    margin-top:10px;
+}
+.accountRetensionBottom div{
+    width:48%;
+    margin:2%;
+}
+.accountRetensionBottom h4{
+    font-size: 22px;
+
+}
+.accountRetensionBottom .expensions{
+    font-size: 12px;
+    font-weight: 500;
+    color: #0168fa;
+}
+.accountRetensionBottom .cancellations{
+    font-size: 12px;
+    font-weight: 500;
+    color: #f10075;
+
 }
