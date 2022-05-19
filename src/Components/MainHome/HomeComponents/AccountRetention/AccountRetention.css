@@ -1,0 +1,14 @@
+.accountRetention{
+    border:1px solid #dfdedec0;
+    padding:20px;
+}
+.accountRetention h5{
+    font-size:16px;
+    margin:0;
+}
+.accountRetention p{
+    font-size:13px;
+    margin:0;
+    color:#8392a5;
+    padding-top:5px;
+}

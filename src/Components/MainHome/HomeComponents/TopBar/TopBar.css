@@ -1,0 +1,56 @@
+.dashBoardArea .leftSide{
+    padding:0;
+}
+.dashBoardArea .rightSide{
+    padding:0;
+}
+
+
+.dashBoardArea .leftSide p {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 500;
+    color: #1c273c;
+
+}
+
+.dashBoardArea .leftSide p span {
+    color: #0168fa;
+}
+.welcomeToDashboard {
+    font-size: 22px;
+}
+
+.dashBoardArea .rightSide {
+    text-align: right;
+}
+
+.dashBoardArea .rightSide button {
+    border: 1px solid #8b8888;
+    margin: 0 5px;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #686767;
+    background: white;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 4px 14px;
+    cursor:pointer;
+}
+.dashBoardArea .rightSide button:hover{
+    color:#515151d2;
+    border-color: #515151cd;
+}
+.dashBoardArea .rightSide button span{
+    font-size: 15px;
+}
+.dashBoardArea .rightSide .reportBtn{
+    background-color: #0153C7;
+    color: white;
+    border-color: transparent;
+}
+.dashBoardArea .rightSide .reportBtn:hover{
+    background-color: #1266db;
+    color: white;
+}

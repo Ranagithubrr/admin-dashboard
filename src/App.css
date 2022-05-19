@@ -36,26 +36,8 @@
     transform: rotate(360deg);
   }
 }
-
-
-/* my design */
-.container{
-  display:flex;
-  width: 100%;
-  /* transition: 0.3s; */
-}
-.sidebarArea{
-  flex:1;
-  transition: 0.3s;
-}
-.minisidebar{
-  flex:0.2;
-  transition: 0.3s;
-}
-.main-center-area{
-  flex:4;
-  margin-top:20px;
-  transition: 0.3s;
-  box-sizing: border-box;
-  overflow: hidden;
+.container-fluid{
+  width:100%;
+  padding:0 !important;
+  margin:0;
 }

@@ -1,0 +1,63 @@
+.notificationArea{
+    width:300px;
+}
+.notificationArea hr{
+    margin:0;
+    color:gray;
+}
+.notificationTitle{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#000000cc;
+    padding-bottom: 5px;
+}
+.top, .mid{
+    padding:15px 0 0 15px;
+}
+.notiUserImg{
+    height: 35px;
+    width:35px;
+    border-radius:50%;
+}
+.notifications{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.notifications p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.notifications span, .notifications p{
+    padding:0;
+    margin:0;
+    font-size: 13px;
+    line-height: 1.4;
+}
+.notifications .dateTime{
+    color:gray;
+}
+.notificationSingleArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px 0;
+}
+.allNotificationTitle{
+    font-size: 12px;
+    color:gray;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor:pointer;
+    padding-bottom: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.allNotificationTitle:hover{
+    color:#555454;
+}

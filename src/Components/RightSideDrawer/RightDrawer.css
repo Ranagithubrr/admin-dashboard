@@ -1,0 +1,84 @@
+.rightButton{
+    background-color: black;
+    color:white;
+    height:30px;
+    width:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding:20px;
+    border-radius:5px;
+    position:fixed;
+    right:5px;
+    top:10rem;
+}
+.rightSettingIcon{
+    color:white;
+    font-size: 20px;
+    animation: rotateSetting 4s infinite linear;
+    
+}
+@keyframes rotateSetting{
+    0%{
+        transform:rotate(0deg);
+    }100%{
+        transform:rotate(360deg);
+    }
+}
+.rightMenuArea{
+    padding:15px;
+}
+.rightLogo{
+    margin:0;
+}
+.tagline{
+    font-size: 10px;
+    color: #001737;
+}
+.skinMods h6{
+    font-size: 12px;
+}
+.skinMods span{
+    font-size: 12px;
+    text-align: center;
+    display: block;
+}
+.modeButtons{
+    display: block;
+    height:20px;
+    width:90%;
+    margin:0 auto;
+    border:1px solid gray;
+    outline:none;
+}
+.darkTheme{
+    background-color: #242323d6;
+}
+.classicTheme{
+    background-color: #3d86d3d6;
+}
+.lightTheme:focus{
+    border:2px solid blue;
+}
+.darkTheme:focus{
+    border:2px solid blue;
+}
+.classicTheme:focus{
+    border:2px solid blue;
+}
+.navigation button{
+    width:100%;
+    text-transform: uppercase;
+    border:1px solid #737171;
+    font-size: 10px;
+    padding:5px;
+    border-radius: 3px;
+    font-weight: 500;
+    background-color: #fff;
+    color:#606060;
+}
+.navigation button:hover, .navigation button:focus{
+    background-color: #606060;
+    color:#fff;
+}

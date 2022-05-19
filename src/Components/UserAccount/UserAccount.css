@@ -1,0 +1,41 @@
+.user{
+    border:none;
+    color:white;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: gray;
+    border-radius:50%;
+    padding: 5px 9px;
+    margin-left:15px;
+    cursor: pointer;
+}
+.mainArea{
+    width:200px;
+    padding:10px 20px;
+}
+.userPhoto{
+    height:70px;
+    width:70px;
+    border-radius: 50%;
+    margin-bottom:10px;
+}
+.userName{
+    font-size: 16px;
+    margin:0;
+}
+.userTitle{
+    font-size: 12px;
+    display: block;
+    margin-bottom: 10px;
+}
+.mainArea a{
+    display: block;
+    list-style: none;
+    font-size: 14px;
+    text-decoration: none;
+    color:#302f2f;
+    padding:2px;
+}
+.mainArea a span{
+    margin-right: 12px;
+}

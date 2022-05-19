@@ -1,0 +1,58 @@
+.conversion {
+    border: 1px solid #dfdedec0;
+    height:160px;
+    box-sizing:border-box;
+    overflow: hidden;
+    padding:0;
+    width:24%;
+    margin:0 auto;
+    
+}
+.conversion:first-child{
+    margin-left:0;
+}
+.conversion:last-child{
+    margin-right:0;
+}
+.conversion h6 h4 {
+    margin: 0;
+}
+
+.conversionTop {
+    padding: 20px;
+}
+
+.conversion .conversionTop h6 {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.conversion .conversionMid {
+    display: flex;
+    vertical-align: text-bottom;
+   
+}
+.conversion .conversionMid h4 {
+    align-self: flex-end;
+    margin:0;
+    margin-right:5px;
+    padding:0;
+}
+.conversion .conversionMid span {
+    font-size: 12px;
+    align-self: flex-end;
+}
+.greenText{
+    color:green;
+    font-weight: 500;
+}
+.redText{
+    color:red;
+    font-weight: 500;
+}
+.upArrow .downArrow{
+    font-size: 20px;
+}
+.lastWeek{
+    color:gray;
+}

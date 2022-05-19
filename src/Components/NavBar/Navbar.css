@@ -1,0 +1,93 @@
+.navbar{
+    width:100%;
+    padding:0 20px;
+    border-bottom:1px solid #e7e7e7;
+    display: flex;
+    align-items: center;
+}
+.navbar .left{
+    width:12%;
+}
+.navbar .middle{
+    width:58%;
+    margin-top:15px;
+}
+.navbar .right{
+    width:30%;
+}
+.logo{
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color:#031A61;
+    font-weight: 600;
+}
+.logo .ar{
+    font-weight: 400;
+    color:#0168FA;
+
+}
+.dropLink{
+    color:#2b2b2b;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+.dropIcon{
+    font-size: 11px;
+}
+.dropdown-menu{
+    margin-top: 16px;
+    padding:10px 30px;
+    left:-20px;
+    z-index:1000 !important;
+    position:absolute;
+}
+.dropdown .triangle{
+    position: absolute;
+    top: -9px;
+    left: 31px;
+    height: 16px;
+    width: 16px;
+    background: white;
+    clip-path: polygon(100% 0, 0% 0%, 100% 100%);
+    border: 1px solid #00000026;
+    border-bottom: 1px solid white;
+    transform: rotate(315deg);
+}
+.dropdown-menu a{
+    padding:2px;
+    text-transform: capitalize;
+    font-size: 13px;
+    color: #1b2e4b;
+}
+.dropdown-menu a:hover{
+   background-color: transparent;
+   color:#0153C7;
+}
+.icon{
+    margin-right: 5px;
+}
+.middle ul{
+    display:flex;
+}
+.middle ul li{
+    list-style:none;
+    padding:0 15px;
+}
+.middle ul li a{
+    color:#2b2b2b;
+    text-decoration: none;
+    font-weight: 500;
+}
+.rightMenu{
+    display: flex;
+    padding-top: 8px;
+    float:right;
+}
+.rightMenu li{
+    list-style: none;
+    padding:0 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
