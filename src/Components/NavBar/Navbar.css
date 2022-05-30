@@ -4,6 +4,11 @@
     border-bottom:1px solid #e7e7e7;
     display: flex;
     align-items: center;
+    position:fixed;
+    width:100%;
+    background:#fff;
+    z-index:1000;
+    top:0;
 }
 .navbar .left{
     width:12%;

@@ -1,0 +1,39 @@
+.salesRevenue{
+    border: 1px solid #dfdedec0;
+    /* padding:10px; */
+}
+.salesRevenueTop{
+    padding:15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dfdedec0;
+}
+.salesRevenueTop h6{
+    font-size: 14px;
+    margin:0;
+}
+.salesRevenueTopRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.salesRevenueTopRight .usa{
+    text-transform: uppercase;
+    padding-left: 5px;
+    color:#7a7777;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.salesRevenueTopRight .usa span{
+    font-size: 10px;
+}
+
+.center{
+    margin-left:auto;
+    margin-right:auto;
+}
+.center th, .center td{
+    padding:0 30px;
+}

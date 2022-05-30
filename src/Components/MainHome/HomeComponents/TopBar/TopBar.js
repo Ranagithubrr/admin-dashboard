@@ -4,7 +4,7 @@ import {AiOutlineMail, AiOutlinePrinter, AiOutlineFileText} from 'react-icons/al
 
 const MainHome = () => {
     return (
-            <div className="row dashBoardArea d-flex align-items-center py-4">
+            <div className="row dashBoardArea d-flex align-items-center py-4 mt-5 pt-4">
                 <div className="col-6 align-items-center leftSide">
                     <p>dashboard  / <span>  sales monitoring</span></p>
                     <h2 className='welcomeToDashboard'>Welcome To Dashboard</h2>

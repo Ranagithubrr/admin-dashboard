@@ -5,6 +5,7 @@ import TopBar from './HomeComponents/TopBar/TopBar';
 import Conversion from './HomeComponents/ConversionRateCard/Conversion';
 import RevenueGroth from './HomeComponents/RevenueGrowth/RevenueGroth';
 import AccountRetention from './HomeComponents/AccountRetention/AccountRetention';
+import SalesRevenue from './HomeComponents/SalesRevenue/SalesRevenue';
 
 const MainHome = () => {
     return (
@@ -23,6 +24,12 @@ const MainHome = () => {
                 <div className="col-5">
                     <AccountRetention />
                 </div>
+            </div>
+            <div className="row">
+                <div className="col-4 p-0">
+                    <SalesRevenue />
+                </div>
+                <div className="col-8 p-0">Your Most Recent Earnings</div>
             </div>
             </>
     );

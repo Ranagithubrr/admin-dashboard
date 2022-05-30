@@ -115,7 +115,7 @@ const AccountRetention = () => {
                 <p>Number of customers who have active subscription with you.</p>
             </div>
             <div className="accountRetensionMid">
-                <ResponsiveContainer width="100%" height={300}>
+                <ResponsiveContainer width="100%" height={330}>
 
 
                     <BarChart width={350} height={280} data={data}>
