@@ -37,3 +37,14 @@
 .center th, .center td{
     padding:0 30px;
 }
+.salesRevenueBottom th{
+    color: #7a7777;
+    font-weight: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.salesRevenueBottom td{
+    font-weight: normal;
+    font-size: 13px;
+    padding-top: 8px;
+}

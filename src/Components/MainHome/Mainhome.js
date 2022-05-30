@@ -6,6 +6,12 @@ import Conversion from './HomeComponents/ConversionRateCard/Conversion';
 import RevenueGroth from './HomeComponents/RevenueGrowth/RevenueGroth';
 import AccountRetention from './HomeComponents/AccountRetention/AccountRetention';
 import SalesRevenue from './HomeComponents/SalesRevenue/SalesRevenue';
+import RecentEarnings from './HomeComponents/RecentEarnings/RecentEarnings';
+
+
+
+
+import './MainHome.css';
 
 const MainHome = () => {
     return (
@@ -18,10 +24,10 @@ const MainHome = () => {
                 <Conversion CardName="order quantity" Ammount="1650" ProfitPercentage="2.1" />
             </div>
             <div className="row my-2">
-                <div className="col-7 p-0">
+                <div className="col-7 pr-2 removePadding">
                     <RevenueGroth />
                 </div>
-                <div className="col-5">
+                <div className="col-5  p-0">
                     <AccountRetention />
                 </div>
             </div>
@@ -29,7 +35,9 @@ const MainHome = () => {
                 <div className="col-4 p-0">
                     <SalesRevenue />
                 </div>
-                <div className="col-8 p-0">Your Most Recent Earnings</div>
+                <div className="col-8 p-0">
+                    <RecentEarnings />
+                </div>
             </div>
             </>
     );
