@@ -1,64 +1,78 @@
-.recentEarnings{
-    border:1px solid #485e9029;
-    padding:20px;
+.recentEarnings {
+    border: 1px solid #485e9029;
     margin-left: 10px;
 }
-.recentEarningsTop{
+.recentEarningsTop {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 20px 15px 20px;
 }
-.recentEarningsTopLeft h5{
+
+.recentEarningsTopLeft h5 {
     margin: 0;
     font-size: 14px;
 }
-.recentEarningsTopLeft p{
+
+.recentEarningsTopLeft p {
     margin: 0;
     font-size: 14px;
     color: #8392a5;
 }
-.recentEarningsTopRight button{
-    border:1px solid #485e9029;
-    outline:none;
-    padding:5px 15px;
+
+.recentEarningsTopRight button {
+    border: 1px solid #485e9029;
+    outline: none;
+    padding: 5px 15px;
     text-transform: capitalize;
     background-color: #fff;
-    color:#8392a5;
+    color: #8392a5;
     font-size: 12px;
 }
-.recentEarningsTopRight .range{
+
+.recentEarningsTopRight .range {
     background-color: #f5f6fa;
     border-radius: 5px 0px 0px 5px;
 }
-.recentEarningsTopRight .period{
+
+.recentEarningsTopRight .period {
     border-radius: 0 5px 5px 0;
 }
-.recentEarningsTopRight button:focus{
+
+.recentEarningsTopRight button:focus {
     background-color: #f5f6fa;
     border-color: #8392a5;
 }
-.recentEarningsMid{
+
+.recentEarningsMid {
     display: flex;
+    border-bottom: 1px solid #dfdede;
+    padding:20px 20px;
 }
-.earningChartAreas{
+
+.earningChartAreas {
     display: flex;
     align-items: center;
+
 }
-.earningChartAreas h6{
-    margin:0;
+
+.earningChartAreas h6 {
+    margin: 0;
     font-size: 20px;
     text-transform: uppercase;
     font-size: 12px;
-    color:#8392a5;
+    color: #8392a5;
 }
-.earningChartAreas h4{
+
+.earningChartAreas h4 {
     margin: 0;
     text-transform: uppercase;
     font-size: 20px;
     color: #001737;
     padding-top: 8px;
 }
-.barIconArea{
+
+.barIconArea {
     padding: 8px 13px;
     border-radius: 5px;
     font-size: 24px;
@@ -66,18 +80,60 @@
     margin-right: 10px;
     opacity: 0.5;
 }
-.firstBar{
+
+.firstBar {
     background: #00cccc;
 }
-.secondBar{
+
+.secondBar {
     background: #f10075;
 }
-.thirdBar{
+
+.thirdBar {
     background: #0168fa;
 }
-.earningChartAreas:nth-child(2){
-    margin-left:30px;
+
+.earningChartAreas:nth-child(2) {
+    margin-left: 30px;
 }
-.earningChartAreas:nth-child(3){
-    margin-left:30px;
+
+.earningChartAreas:nth-child(3) {
+    margin-left: 30px;
+}
+
+.leftAlignTable {
+    width: 100%;
+}
+.leftAlignTable th,
+.leftAlignTable td{
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size:12px;
+}
+.leftAlignTable th:nth-child(1),
+.leftAlignTable td:nth-child(1){
+    text-align: left;
+}
+.recentEarningsBottom{
+    padding:15px 20px 0 15px;
+}
+.salesCount{
+    color:black !important;
+    font-weight: 500;
+    font-size: 13px;
+}
+.grossEarnings{
+    color: #00cccc;
+}
+.taxWithheld{
+    color: #f10075;
+}
+.leftAlignTable {
+    border-collapse: inherit;
+    border-spacing: 0 10px;
+}
+.leftAlignTable tr{
+    border-bottom:1px solid #dfdede;
+    padding:10px 0;
 }

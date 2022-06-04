@@ -1,0 +1,28 @@
+.downloadEarnings {
+    display: flex;
+    padding: 0px 20px;
+    border: 1px solid #485e9029;
+    margin: 10px 0px 0px 10px;
+}
+
+.downloadEarningsLeft {
+    width: 20%;
+}
+
+.downloadEarningsLeft span {
+    font-size: 60px;
+    color: rgb(192, 204, 218);
+}
+.downloadEarningsRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.downloadEarningsRight h5{
+    font-size: 16px;
+}
+.downloadEarningsRight p{
+    color: #8392a5;
+    font-size: 15px;
+    margin-bottom: 0px !important;
+}

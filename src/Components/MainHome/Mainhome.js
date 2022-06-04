@@ -12,6 +12,7 @@ import RecentEarnings from './HomeComponents/RecentEarnings/RecentEarnings';
 
 
 import './MainHome.css';
+import DownloadEarnings from './HomeComponents/DownloadEarnings/DownloadEarnings';
 
 const MainHome = () => {
     return (
@@ -31,12 +32,13 @@ const MainHome = () => {
                     <AccountRetention />
                 </div>
             </div>
-            <div className="row">
+            <div className="row mb-5">
                 <div className="col-4 p-0">
                     <SalesRevenue />
                 </div>
                 <div className="col-8 p-0">
                     <RecentEarnings />
+                    <DownloadEarnings />
                 </div>
             </div>
             </>
