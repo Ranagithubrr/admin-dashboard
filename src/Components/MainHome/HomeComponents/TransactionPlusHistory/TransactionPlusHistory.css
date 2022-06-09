@@ -1,0 +1,77 @@
+.tranPlusHis{
+    border:1px solid #dfdedec0;
+}
+.tranPlusHisTop{
+    padding:10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dfdedec0;
+}
+.tranPlusHisTop .tranPlusHisTopLeft h5{
+    padding:0;
+    margin:0;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.tranPlusHisTop .tranPlusHisTopRight span{
+    font-size: 22px;
+    cursor: pointer;
+    color: #8c9197;
+}
+.transactionHistoryItems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dfdedec0;
+    padding:10px 15px;
+}
+.transactionHistoryItemsLeft{
+    display: flex;
+    align-items: center;
+}
+.transactionHistoryItemsLeftLeft img{
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+}
+.transactionHistoryItemsLeftRight{
+    padding-left:10px;
+}
+.transactionHistoryItemsLeftRight h6 ,.transactionHistoryItemsRight h5{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+.transactionHistoryItemsLeftRight span{
+    font-size: 12px;
+    color: #8392a5;
+}
+.transactionHistoryItemsRight .transactionCompleted{
+    font-size:12px;
+    color: #10b759;
+    float:right;
+}
+.transactionHistoryItemsRight .transactionDeclined{
+    font-size:12px;
+    color: #df3618;
+    float:right;
+}
+
+
+.viewAllTransactions{
+    padding:10px 20px;
+    text-align: center;
+}
+.viewAllTransactions a{
+   text-transform: capitalize;
+   color:#8392a5;
+   text-decoration: none;
+   font-size: 14px;
+}
+.transactionUserItemsRight a{
+    padding: 0px 5px;
+    color: rgb(131, 146, 165);
+    font-size: 20px;
+    cursor: pointer;
+}

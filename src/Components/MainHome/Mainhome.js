@@ -7,12 +7,15 @@ import RevenueGroth from './HomeComponents/RevenueGrowth/RevenueGroth';
 import AccountRetention from './HomeComponents/AccountRetention/AccountRetention';
 import SalesRevenue from './HomeComponents/SalesRevenue/SalesRevenue';
 import RecentEarnings from './HomeComponents/RecentEarnings/RecentEarnings';
+import TranHisData from '../../Data/tranHis.json';
+import NewCustmerData from '../../Data/newCustomers.json'
 
 
 
 
 import './MainHome.css';
 import DownloadEarnings from './HomeComponents/DownloadEarnings/DownloadEarnings';
+import TransactionPlusHistory from './HomeComponents/TransactionPlusHistory/TransactionPlusHistory';
 
 const MainHome = () => {
     return (
@@ -32,7 +35,7 @@ const MainHome = () => {
                     <AccountRetention />
                 </div>
             </div>
-            <div className="row mb-5">
+            <div className="row salesRevenueArea">
                 <div className="col-4 p-0">
                     <SalesRevenue />
                 </div>
@@ -40,6 +43,15 @@ const MainHome = () => {
                     <RecentEarnings />
                     <DownloadEarnings />
                 </div>
+            </div>
+            <div className="row mb-5">
+                <div className="col-4 p-0">
+                    <TransactionPlusHistory HeaderName="transaction history" TranHisData={TranHisData} Renderwhat="transaction"/>
+                </div>
+                <div className="col-4 p-0 newCustomers">
+                <TransactionPlusHistory HeaderName="new customers" TranHisData={NewCustmerData} Renderwhat="user"/>
+                </div>
+                <div className="col-4 p-0">Real time sales</div>
             </div>
             </>
     );
