@@ -1,0 +1,16 @@
+.fotoer{
+    display: flex;
+    justify-content: space-between;
+    background-color:#ebebeb;
+    padding:10px 30px;
+}
+.footerLeft span{
+    font-size: 12px;
+}
+.footerRight a{
+    text-transform: uppercase;
+    color: #1b2e4b;
+    font-size: 12px;
+    padding-right:15px;
+    text-decoration: none;
+}

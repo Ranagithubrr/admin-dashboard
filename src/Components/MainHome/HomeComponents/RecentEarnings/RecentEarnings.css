@@ -2,6 +2,7 @@
     border: 1px solid #485e9029;
     margin-left: 10px;
 }
+
 .recentEarningsTop {
     display: flex;
     justify-content: space-between;
@@ -47,7 +48,7 @@
 .recentEarningsMid {
     display: flex;
     border-bottom: 1px solid #dfdede;
-    padding:20px 20px;
+    padding: 20px 20px;
 }
 
 .earningChartAreas {
@@ -104,36 +105,72 @@
 .leftAlignTable {
     width: 100%;
 }
+
 .leftAlignTable th,
-.leftAlignTable td{
+.leftAlignTable td {
     text-align: right;
     text-transform: uppercase;
     font-weight: normal;
-    font-size:12px;
+    font-size: 12px;
 }
+
 .leftAlignTable th:nth-child(1),
-.leftAlignTable td:nth-child(1){
+.leftAlignTable td:nth-child(1) {
     text-align: left;
 }
-.recentEarningsBottom{
-    padding:15px 20px 0 15px;
+
+.recentEarningsBottom {
+    padding: 15px 20px 0 15px;
 }
-.salesCount{
-    color:black !important;
+
+.salesCount {
+    color: black !important;
     font-weight: 500;
     font-size: 13px;
 }
-.grossEarnings{
+
+.grossEarnings {
     color: #00cccc;
 }
-.taxWithheld{
+
+.taxWithheld {
     color: #f10075;
 }
+
 .leftAlignTable {
     border-collapse: inherit;
     border-spacing: 0 10px;
 }
-.leftAlignTable tr{
-    border-bottom:1px solid #dfdede;
-    padding:10px 0;
+
+.leftAlignTable tr {
+    border-bottom: 1px solid #dfdede;
+    padding: 10px 0;
+}
+
+@media screen and (max-width:768px) {
+    .barIconArea {
+        padding: 3px 8px;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-right: 2px;
+    }
+    .earningChartAreas:nth-child(2),
+    .earningChartAreas:nth-child(3){
+        margin-left:0;
+    }
+    .earningChartAreas h6 {
+        font-size: 11px;
+    }
+    .earningChartAreas h4 {
+        font-size: 12px;
+    }
+    .recentEarnings{
+        margin-left: 0;
+    }
+    .recentEarningsTop{
+        padding:10px;
+    }
+    .recentEarningsBottom {
+        padding: 5px;
+    }
 }

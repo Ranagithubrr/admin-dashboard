@@ -26,3 +26,9 @@
     font-size: 15px;
     margin-bottom: 0px !important;
 }
+
+@media screen and (max-width:768px) {
+    .downloadEarnings{
+        margin:0;
+    }
+}

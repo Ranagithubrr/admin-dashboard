@@ -11,11 +11,11 @@ const RevenueGroth = () => {
                 </div>
                 <div className="topGrowthRight">
                     <span className="rounds blue"></span>
-                    <div className='growthText'>growth actual</div>
+                    <div className='growthText'><span>growth actual</span></div>
                     <span className="rounds green"></span>
-                    <div className='growthText'>actual</div>
+                    <div className='growthText'><span>actual</span></div>
                     <span className="rounds gray"></span>
-                    <div className='growthText'>plan</div>
+                    <div className='growthText'><span>plan</span></div>
                 </div>
             </div>
             <div className="midGrowth">

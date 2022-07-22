@@ -29,11 +29,10 @@
     float: right;
 }
 
-.revenueGrowth .topGrowth .topGrowthRight span {
+.revenueGrowth .topGrowth .topGrowthRight div span {
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 12px;
     color: gray;
-    padding: 0 5px;
 }
 
 .revenueGrowth .topGrowth .topGrowthRight .growthText {
@@ -88,4 +87,33 @@
 .midGrowth div p a{
     text-decoration: none;
     color: #0d6efd;
+}
+
+@media screen and (max-width:768px) {
+    .revenueGrowth .topGrowth .topGrowthLeft h6 {
+        font-size: 13px;
+    }
+    .revenueGrowth .topGrowth{
+        padding:8px;
+    }
+    .revenueGrowth .topGrowth .topGrowthLeft{
+        width:40%;
+    }
+    .revenueGrowth .topGrowth .topGrowthRight{
+        width:60%;
+    }
+    .revenueGrowth .topGrowth .topGrowthRight .growthText {
+        font-size: 9px;
+    }
+    .removePadding{
+        padding-right: 0;
+    }
+    .growthText{
+        margin:0;
+    }
+    .revenueGrowth .topGrowth .topGrowthRight div span {
+        text-transform: uppercase;
+        font-size: 8px;
+        color: gray;
+    }
 }

@@ -54,3 +54,16 @@
     background-color: #1266db;
     color: white;
 }
+
+
+@media screen and (max-width:768px) {
+    .welcomeToDashboard{
+        font-size: 15px;
+    }
+    .dashBoardArea .rightSide button{
+        padding:0 2px;
+    }
+    .dashBoardArea .rightSide .reportBtn{
+        margin-top: 3px;
+    }
+}

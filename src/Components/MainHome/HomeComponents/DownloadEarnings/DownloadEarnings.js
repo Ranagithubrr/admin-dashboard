@@ -4,7 +4,7 @@ import './DownloadEarnings.css';
 
 const DownloadEarnings = () => {
     return (
-        <div className='downloadEarnings'>
+        <div className='downloadEarnings mt-2'>
             <div className="downloadEarningsLeft">
                 <span> <FiDownload /></span>
                

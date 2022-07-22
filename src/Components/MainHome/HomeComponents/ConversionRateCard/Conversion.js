@@ -7,7 +7,7 @@ const Conversion = (props) => {
     const { CardName, Ammount, ProfitPercentage } = props;
     let Percentage = parseInt(ProfitPercentage);
     return (
-        <div className='col-3 conversion'>
+        <div className="conversion">
             <div className="conversionTop">
                 <h6>{CardName}</h6>
                 <div className="conversionMid">

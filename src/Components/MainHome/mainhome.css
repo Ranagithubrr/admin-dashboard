@@ -1,9 +1,15 @@
 .removePadding{
     padding-left:0;
 }
-.newCustomers{
-    margin-left:10px;
-}
 .salesRevenueArea{
     margin-bottom:10px;
+}
+/* .conversationSection .col-lg-3{
+    width:24.5%;
+} */
+.conversationSection div:first-child{
+    padding-left:0 !important;
+}
+@media screen and(max-width:768px) {
+ 
 }
