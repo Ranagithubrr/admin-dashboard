@@ -1,26 +1,55 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Navbar.css';
-import { BsChevronDown, FiBarChart2, BiSearch, BsChatSquare, MdNotificationsNone } from 'react-icons/all';
+import { BsChevronDown, FiBarChart2, BiSearch } from 'react-icons/all';
 import Badge from '@mui/material/Badge';
 import UserAccount from '../UserAccount/UserAccount';
 import Notification from '../Notification/Notification';
+import SearchBar from './SearchBar/SearchBar';
+
+
+
+
+
 
 const Navbar = () => {
+
+    const [middleShow, setmiddleShow] = useState(''); // this is for mobile sidebar area
+    const [overlayShow, setOverlayShow] = useState('overlayHidden'); // this is for overlay
+    const [showSearch, setShowSearch] = useState(''); // this is for searchbar area
+
+    const overlayFunc = (e) =>{
+        e == 'show' ? setOverlayShow('') : setOverlayShow('overlayHidden')
+    }
+    const searchbuttonClicked = () =>{
+        console.log('button clicked');
+        showSearch == 'hidesearchBarArea' ? setShowSearch('') : setShowSearch('hidesearchBarArea');
+        console.log(showSearch);
+        setOverlayShow('overlayHidden');
+        overlayFunc('show');
+    }
     return (
         <div className='navbar'>
+            <div className={`overlay ${overlayShow}`}></div>
+            <SearchBar Searchshow={showSearch} OverlayFunc={overlayFunc}/>
             <div className="left">
+                <span id="barIcon" onClick={() => setmiddleShow('middleShow')}><i class="fas fa-bars"></i></span>
                 <a href="#" className='logo'>do<span className='ar'>ar</span></a>
             </div>
-            <div className="middle">
+            <div className={`middle ${middleShow}`}>
+                <div class="sidebarLogoArea">
+                    <a href="#" id="sidebarLogo" className='logo'>do<span className='ar'>ar</span></a>
+                    <span id="crossIcon" onClick={() => setmiddleShow('')}><i class="fas fa-times"></i></span>
+                </div>
+
                 <ul>
                     <li>
                         <div class="dropdown">
                             <a class="dropLink" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Dashboard <span className='dropIcon'><BsChevronDown /></span>
                             </a>
-                            
+
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <div className="triangle"></div>
+                                <div className="triangle"></div>
                                 <a class="dropdown-item" href="#"><span className='icon'><FiBarChart2 /></span> sales monitoring</a>
                                 <a class="dropdown-item" href="#"><span className='icon'><FiBarChart2 /></span> website analytics</a>
                                 <a class="dropdown-item" href="#"><span className='icon'><FiBarChart2 /></span> criptocurrency</a>
@@ -36,7 +65,7 @@ const Navbar = () => {
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <div className="triangle"></div>
+                                <div className="triangle"></div>
                                 <a class="dropdown-item" href="#"><span className='icon'><FiBarChart2 /></span> calender</a>
                                 <a class="dropdown-item" href="#"><span className='icon'><FiBarChart2 /></span> chat</a>
                                 <a class="dropdown-item" href="#"><span className='icon'><FiBarChart2 /></span> contacts</a>
@@ -52,7 +81,7 @@ const Navbar = () => {
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <div className="triangle"></div>
+                                <div className="triangle"></div>
                                 <a class="dropdown-item" href="#"><span className='icon'><FiBarChart2 /></span> sales monitoring</a>
                                 <a class="dropdown-item" href="#"><span className='icon'><FiBarChart2 /></span> website analytics</a>
                                 <a class="dropdown-item" href="#"><span className='icon'><FiBarChart2 /></span> criptocurrency</a>
@@ -70,7 +99,7 @@ const Navbar = () => {
 
                 <ul className='rightMenu'>
                     <li><span>
-                        <BiSearch />
+                        <BiSearch onClick={()=> searchbuttonClicked()}/>
                     </span>
                     </li>
                     <li>

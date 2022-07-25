@@ -11,8 +11,8 @@ const MainHome = () => {
                 </div>
                 <div className="col-6 rightSide">
                     <button><span><AiOutlineMail /></span> email</button>
-                    <button><span><AiOutlinePrinter /></span> print</button>
-                    <button className='reportBtn'><span><AiOutlineFileText /></span> generate report</button>
+                    <button onClick={()=> window.print()}><span><AiOutlinePrinter /></span> print</button>
+                    <button onClick={()=> window.print()} className='reportBtn'><span><AiOutlineFileText /></span> generate report</button>
                 </div>
             </div>
     );

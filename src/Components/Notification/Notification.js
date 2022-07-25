@@ -17,9 +17,9 @@ const Notification = (props) => {
         setAnchorEl(null);
     };
     const notiData = notificationData.slice(1, 7);
-    console.log(notiData);
+    // console.log(notiData);
     const {IconName,DisplayName} = props;
-    console.log(typeof(IconName));
+    // console.log(typeof(IconName));
     return (
         <React.Fragment>
             <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
