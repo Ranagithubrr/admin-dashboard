@@ -1,62 +1,98 @@
-.searchbarArea{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:270px;
+.searchbarArea {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 270px;
     background-color: white;
     z-index: 1000;
 }
-.hidesearchBarArea{
+
+.hidesearchBarArea {
     display: none;
 }
-.form{
-    width:100%;
-    padding:20px;
-    border-bottom:1px solid #485e9029;
+
+.form {
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #485e9029;
 }
-.form input{
-    width:94%;
-    border:none;
-    outline:none;
+
+.form input {
+    width: 94%;
+    border: none;
+    outline: none;
     font-size: 14px;
 }
-.form input::placeholder{
-    color:#C0CCDA;
+
+.form input::placeholder {
+    color: #C0CCDA;
 }
-.searchbarArea form button{
-    width:3%;
-    border:none;
-    outline:none;
+
+.searchbarArea form button {
+    width: 3%;
+    border: none;
+    outline: none;
     background: transparent;
     font-size: 20px;
 }
-.closeIcon{
-    color:red;
+
+.closeIcon {
+    color: red;
 }
-.recentSearchArea{
-    padding:20px;
+
+.recentSearchArea {
+    padding: 20px;
 }
-.recentSearchArea h6{
+
+.recentSearchArea h6 {
     height: 6px;
     text-transform: uppercase;
     font-size: 10px;
-    color:gray;
+    color: gray;
     margin-bottom: 15px;
 }
-.recentSearchArea button{
-    display:inline-block;
-    border:1px solid #485e9029;
-    border-radius:5px;
-    margin-left:5px;
-    background:transparent;
+
+.recentSearchArea button {
+    display: inline-block;
+    border: 1px solid #485e9029;
+    border-radius: 5px;
+    margin-left: 5px;
+    background: transparent;
     font-size: 14px;
-    padding:5px 10px;
+    padding: 5px 10px;
 }
-.recentSearchArea button:hover{
+
+.recentSearchArea button:hover {
     background-color: #C0CCDA;
     transition: 0.3s ease;
 }
-.recentSearchArea .firstbtn{
-    margin-left:0;
+
+.recentSearchArea .firstbtn {
+    margin-left: 0;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    .form input {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .searchbarArea form button {
+        width: 10%;
+        font-size: 20px;
+    }
+
+    .form .closeIcon {
+        /* margin-left: 10px; */
+    }
+
+    .searchbarArea {
+        height: 70vh;
+        min-height: 50vh;
+        max-height: 80vh;
+    }
 }

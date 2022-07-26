@@ -1,4 +1,6 @@
 import * as React from 'react';
+import {Link } from "react-router-dom";
+
 import './UserAccount.css';
 import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
@@ -75,7 +77,7 @@ export default function UserAccount() {
         <a href="#"><span><FaForumbee /></span>Forum</a>
         <a href="#"><span><FiSettings /></span>Account Setting</a>
         <a href="#"><span><FiSettings /></span>Privacy Setting</a>
-        <a href="#"><span><GoSignOut /></span>Sign Out</a>
+        <Link to="/signin"><span><GoSignOut /></span>Sign Out</Link>
        </div>
       </Menu>
     </React.Fragment>

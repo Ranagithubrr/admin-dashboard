@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import {Link} from 'react-router-dom';
 import './Navbar.css';
 import { BsChevronDown, FiBarChart2, BiSearch } from 'react-icons/all';
 import Badge from '@mui/material/Badge';
@@ -33,7 +34,7 @@ const Navbar = () => {
             <SearchBar Searchshow={showSearch} OverlayFunc={overlayFunc}/>
             <div className="left">
                 <span id="barIcon" onClick={() => setmiddleShow('middleShow')}><i class="fas fa-bars"></i></span>
-                <a href="#" className='logo'>do<span className='ar'>ar</span></a>
+                <Link to="/" className='logo'>do<span className='ar'>ar</span></Link>
             </div>
             <div className={`middle ${middleShow}`}>
                 <div class="sidebarLogoArea">
