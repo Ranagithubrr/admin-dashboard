@@ -91,8 +91,11 @@
     }
 
     .searchbarArea {
-        height: 70vh;
-        min-height: 50vh;
-        max-height: 80vh;
+        height:auto;
+    }
+    .recentSearchArea button{
+        margin-top:5px;
+        margin-right:5px;
+        margin-left:0;
     }
 }

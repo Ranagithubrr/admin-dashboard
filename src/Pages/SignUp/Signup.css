@@ -1,129 +1,30 @@
-.signIn{
-    height:82vh;
-}
-.signInArea{
-    display: flex;
-    align-items: center;
-    height:100%;
-}
-.signInArea .userProfileImage{
-    height: 400px;
-}
-.signInformRight .signin{
+.createNewAccount{
     font-family: 'Montserrat' ,sans-serif;
     font-weight: 600;
     font-size: 30px;
+    padding-top:20px;
 }
-.signInformRight .welcomeback{
+.itsFreeToSignUp{
     font-size: 14px;
     color: #00000061;
     margin: 0;
 }
-.signInform .inputFields{
-    margin-top: 10px;
-}
-.signInform .inputFields input{
-    display: block;
-    width:100%;
-}
-.signInform .inputFields input[type="email"],
-.signInform .inputFields input[type="password"]{
-    border:1px solid #717171b7;
-    padding:8px 10px;
-    border-radius:5px;
-    font-size: 13px;
-    outline:none;
-}
-.passwordBlock{
-    display: flex;
-    justify-content: space-between;
-}
-.passwordBlock a{
-    text-decoration: none;
-    font-size: 13px;
-}
-.signInform .inputFields input:focus{
-    outline:3px solid #0d98e375;
-    transition: 0.1s;
-}
-.signInform .inputFields input::placeholder{
-    color:gray;
-}
-.signInform .inputFields label{
-    font-size: 14px;
-    color:#171717;
-    font-weight: 500;
-}
-.signInform button{
-    width:100%;
-    padding:10px;
-    border-radius:5px;
-    border:1px solid;
-    font-size:13px;
-}
-.signInform .signInBtn{
-    background:#042893;
-    color:#fff;
-    font-family: 'Montserrat' ,sans-serif;
-    transition: 0.3s ease;
-}
-.signInform .signInBtn:hover{
-    background:#063CDD;
-}
-.signInform .signInFB{
-    background:#fff;
-    color:#4064ac;
-    font-family: 'Montserrat' ,sans-serif;
-    transition: 0.3s ease;
-}
-.signInform .signInFB:hover{
-    background:#4064AC;
-    color:#fff;
-}
-.signInform .signInTW{
-    background:#fff;
-    color:#4064ac;
-    font-family: 'Montserrat' ,sans-serif;
-    transition: 0.3s ease;
-}
-.signInform .signInTW:hover{
-    background:#00A7E6;
-    color:#fff;
-}
-.dontHaveAccount{
-    text-align: center;
-}
-.dontHaveAccount a{
-   text-decoration: none;
-}
-.orDivider{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
+.tosAggrement{
     font-size: 12px;
 }
-.orDivider::before{
-    content:'';
-    display:block;
-    flex:1 1 0%;
-    height:1px;
-    background: rgb(229, 233, 242);
+.signupAvatar{
+    width:100%;
 }
-.orDivider::after{
-    content:'';
-    display:block;
-    flex:1 1 0%;
-    height:1px;
-    background: rgb(229, 233, 242);
+.signUp{
+    height:120vh;
 }
-
-
-@media screen and (max-width:768px){
-    .signupformLeft{
+.signInArea{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width:768px) {
+    .signupAvatarArea{
         display: none;
     }
-    .signIn{
-        min-height:80vh;
-    }
 }
+

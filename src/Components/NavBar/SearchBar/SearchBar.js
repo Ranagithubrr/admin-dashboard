@@ -3,19 +3,24 @@ import { useState, useEffect } from 'react';
 import './SearchBar.css';
 
 const SearchBar = (props) => { 
+    
     const {Searchshow,OverlayFunc} = props;
     useEffect(()=>{
         console.log('value changed, the value is ', Searchshow);
-
         setSearchTrigger('')
     },[Searchshow]);
     
-    const [searchTrigger,setSearchTrigger] = useState('hidesearchBarArea');
+    
+
+    
 
     const closebtnclicked =()=>{
         setSearchTrigger('hidesearchBarArea');
-        OverlayFunc('')
+        OverlayFunc('');
     }
+    const [searchTrigger,setSearchTrigger] = useState('hidesearchBarArea');
+
+    
     return (
         <div className={`searchbarArea ${searchTrigger}`}>
             <form action="#" className='form'>
@@ -25,7 +30,7 @@ const SearchBar = (props) => {
             </form>
             <div className="recentSearchArea">
                 <h6>RECENT SEARCHES</h6>
-                <button class="firstbtn">modern dahboard</button>
+                <button class="firstbtn">modern dashboard</button>
                 <button>calender app</button>
                 <button>modal examples</button>
                 <button>avatar</button>

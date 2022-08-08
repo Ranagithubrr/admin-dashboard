@@ -41,14 +41,15 @@ const Navbar = () => {
                     <a href="#" id="sidebarLogo" className='logo'>do<span className='ar'>ar</span></a>
                     <span id="crossIcon" onClick={() => setmiddleShow('')}><i class="fas fa-times"></i></span>
                 </div>
-
+                <h4 className='mainNavigation'>main navigation</h4>
                 <ul>
                     <li>
                         <div class="dropdown">
                             <a class="dropLink" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Dashboard <span className='dropIcon'><BsChevronDown /></span>
                             </a>
-
+                            
+                            
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <div className="triangle"></div>
                                 <a class="dropdown-item" href="#"><span className='icon'><FiBarChart2 /></span> sales monitoring</a>

@@ -1,56 +1,65 @@
-.navbar{
-    width:100%;
-    padding:0 20px;
-    border-bottom:1px solid #e7e7e7;
+.navbar {
+    width: 100%;
+    padding: 0 20px;
+    border-bottom: 1px solid #e7e7e7;
     display: flex;
     align-items: center;
-    position:fixed;
-    width:100%;
-    background:#fff;
-    z-index:1000;
-    top:0;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 1000;
+    top: 0;
 }
+
 .navbar .left {
     width: 12%;
     display: flex;
     align-items: center;
 }
-.navbar .middle{
-    width:58%;
-    margin-top:15px;
+
+.navbar .middle {
+    width: 58%;
+    margin-top: 15px;
 }
-.navbar .right{
-    width:30%;
+
+.navbar .right {
+    width: 30%;
 }
-.logo{
+
+.logo {
     font-size: 22px;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    color:#031A61;
+    color: #031A61;
     font-weight: 600;
 }
-.logo .ar{
+
+.logo .ar {
     font-weight: 400;
-    color:#0168FA;
+    color: #0168FA;
 
 }
-.dropLink{
-    color:#2b2b2b;
+
+.dropLink {
+    color: #2b2b2b;
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
 }
-.dropIcon{
+
+.dropIcon {
     font-size: 11px;
 }
-.dropdown-menu{
+
+.dropdown-menu {
     margin-top: 16px;
-    padding:10px 30px;
-    left:-20px;
-    z-index:1000 !important;
-    position:absolute;
+    padding: 10px 30px;
+    left: -20px;
+    z-index: 1000 !important;
+    position: absolute;
 }
-.dropdown .triangle{
+
+.dropdown .triangle {
     position: absolute;
     top: -9px;
     left: 31px;
@@ -62,122 +71,201 @@
     border-bottom: 1px solid white;
     transform: rotate(315deg);
 }
-.dropdown-menu a{
-    padding:2px;
+
+.dropdown-menu a {
+    padding: 2px;
     text-transform: capitalize;
     font-size: 13px;
     color: #1b2e4b;
 }
-.dropdown-menu a:hover{
-   background-color: transparent;
-   color:#0153C7;
+
+.dropdown-menu a:hover {
+    background-color: transparent;
+    color: #0153C7;
 }
-.icon{
+
+.icon {
     margin-right: 5px;
 }
 
-.middle ul{
-    display:flex;
+.middle ul {
+    display: flex;
 }
-.middle ul li{
-    list-style:none;
-    padding:0 15px;
+
+.middle ul li {
+    list-style: none;
+    padding: 0 15px;
 }
-.middle ul li a{
-    color:#2b2b2b;
+
+.middle ul li a {
+    color: #2b2b2b;
     text-decoration: none;
     font-weight: 500;
 }
-.rightMenu{
+
+.rightMenu {
     display: flex;
     padding-top: 8px;
-    float:right;
+    float: right;
 }
-.rightMenu li{
+
+.rightMenu li {
     list-style: none;
-    padding:0 10px;
+    padding: 0 10px;
     font-size: 22px;
     cursor: pointer;
 }
-#barIcon,#crossIcon,#sidebarLogo{
+
+#barIcon,
+#crossIcon,
+#sidebarLogo {
     display: none;
 }
-.overlay{
-    height:100vh;
-    width:100vw;
+
+.overlay {
+    height: 100vh;
+    width: 100vw;
     background-color: #050505;
-    position:fixed;
-    top:0;
-    left:0;
-    opacity:0.6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
 }
-.overlayHidden{
+
+.overlayHidden {
     display: none;
 }
+.mainNavigation{
+    display: none;
+}
+
 @media screen and (max-width:768px) {
-    .navbar{
+    .dropdown .triangle {
+        top: 32px;
+        display: none;
+    }
+
+    .navbar {
         margin: 0 auto;
         padding: 0 18px 0 20px;
     }
-    #barIcon{
+
+    #barIcon {
         display: block;
         font-size: 20px;
         margin-right: 10px;
-        cursor:pointer;
+        cursor: pointer;
     }
-    .middle{
-        position:fixed;
-        height:100vh;
-        width:200px;
-        left:-1000px;
-        top:0;
-        background:#262626;
-        transition:0.5s ease;
-        color:white;
+
+    .middle {
+        position: fixed;
+        height: 100vh;
+        width: 200px;
+        left: -1000px;
+        top: 0;
+        background: #262626;
+        transition: 0.5s ease;
+        color: white;
     }
-    
-    .dropdown-menu{
+
+    .dropdown-menu {
         background-color: black;
-        padding:10px;
+        padding: 10px;
+        display: block;
     }
-    .navbar .middle{
-        min-width:150px;
-        max-width:40%;
-        margin-top:0;
+
+    .navbar .middle {
+        overflow-y: scroll;
+        width: calc(50% + 20px);
+        min-width: 250px;
+        margin-top: 0;
+        z-index: 1000;
     }
-    .middleShow{
-        left:0;
+
+    .middleShow {
+        left: 0;
     }
-    .middle ul{
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown .dropdown-menu {
+        position: static;
+        top: 100%;
+        background: transparent;
+        border: navajowhite;
+        border-left: 1px solid #ffffff3b;
+        border-radius: 0;
+        margin-left: 15px;
+        display: none;
+    }
+
+    .dropdown .show {
+        display: block;
+    }
+
+    .middle ul {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .dropdown .middle ul {
         display: block;
         margin-top: 10px;
-        padding-left:10px;
+        padding-left: 10px;
     }
-    .middle ul li{
-        padding-top:20px;
+
+    .middle ul li {
+        padding-top: 20px;
     }
-    .middle ul li a, .dropdown-menu a{
-        color:#ffffffc0;
+
+    .middle ul li a,
+    .dropdown-menu a {
+        color: #ffffffc0;
     }
-    #crossIcon{
+
+    #crossIcon {
         /* position: absolute;
         right: 20px;
         top: 20px; */
         font-size: 22px;
-        display: inline;
+        display: initial;
+        cursor: pointer;
     }
-    #sidebarLogo{
+
+    #sidebarLogo {
         display: block;
     }
-    .sidebarLogoArea{
+
+    .sidebarLogoArea {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding:0 20px 10px 20px;
+        padding: 0 20px 10px 20px;
         margin-top: 20px;
-        border-bottom:1px solid wheat;
+        border-bottom: 1px solid wheat;
     }
-    #sidebarLogo{
-        color:wheat;
+
+    #sidebarLogo {
+        color: wheat;
+    }
+
+    .dropdown .dropLink {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mainNavigation {
+        display: block;
+        font-size: 17px;
+        font-weight: 600;
+        color: #8392a5;
+        text-transform: uppercase;
+        padding-left: 15px;
+        padding-top: 25px;
+        margin-bottom: 0;
     }
 }
