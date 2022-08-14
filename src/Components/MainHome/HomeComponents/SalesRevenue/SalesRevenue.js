@@ -1,16 +1,16 @@
 import React from 'react';
-import ReactDOM from "react-dom";
-import { ComposableMap, Geographies, Geography } from "react-simple-maps";
+import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { BsChevronDown } from 'react-icons/all';
 import SalesRevenueData from '../../../../Data/SalesRevenue.json';
 import './SalesRevenue.css';
 
-const geoUrl = "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
+// const geoUrl = "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
 
 
-const SalesRevenue = () => {
-  console.log('Im from salesrevenue');
+const SalesRevenue = ({ setTooltipContent }) => {
+  // console.log('Im from salesrevenue');
   const salesDataSpliced = SalesRevenueData.splice(0, 5);
+  // console.log(salesDataSpliced);
   return (
     <div>
       <div className="salesRevenue">
@@ -28,11 +28,38 @@ const SalesRevenue = () => {
         <div className="salesRevenueMid">
           <div>
             <ComposableMap>
-              <Geographies geography={geoUrl}>
-                {({ geographies }) =>
-                  geographies.map(geo => <Geography key={geo.rsmKey} geography={geo} />)
-                }
-              </Geographies>
+              <ZoomableGroup>
+                <Geographies geography="/features.json">
+                  {({ geographies }) =>
+                    geographies.map((geo) => (
+                      <Geography
+                        key={geo.rsmKey}
+                        geography={geo}
+                        onMouseEnter={() => {
+                          setTooltipContent(`${geo.properties.name}`);
+                        }}
+                        onMouseLeave={() => {
+                          setTooltipContent("");
+                        }}
+                        style={{
+                          default: {
+                            fill: "#D6D6DA",
+                            outline: "none"
+                          },
+                          hover: {
+                            fill: "#F53",
+                            outline: "none"
+                          },
+                          pressed: {
+                            fill: "#E42",
+                            outline: "none"
+                          }
+                        }}
+                      />
+                    ))
+                  }
+                </Geographies>
+              </ZoomableGroup>
             </ComposableMap>
           </div>
         </div>
@@ -49,7 +76,7 @@ const SalesRevenue = () => {
               {
                 salesDataSpliced.map(function (data) {
                   return (
-                    <tr>
+                    <tr key={data.id}>
                       <td>{data.state}</td>
                       <td>{data.orders}</td>
                       <td>{data.earning}</td>

@@ -1,16 +1,15 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './TransactionPlusHistory.css';
 import { AiOutlineReload, BiDotsVerticalRounded ,AiOutlineMail,FiSlash,FiUser} from 'react-icons/all';
-import User from '../../../../img/user.jpg';
-import { ListItemSecondaryAction } from '@mui/material';
 
 
 const TransactionPlusHistory = (props) => {
     const { HeaderName, TranHisData, Renderwhat } = props;
     // console.log(TranHisData);
     const MyTransactionHisData = TranHisData.slice(0, 5);
-    console.log(MyTransactionHisData);
-    Renderwhat == "transaction" ? console.log('transaction') : console.log('user');
+    // console.log(MyTransactionHisData);
+    // Renderwhat === "transaction" ? console.log('transaction') : console.log('user');
     return (
         <div className='tranPlusHis'>
             <div className="tranPlusHisTop">
@@ -24,9 +23,9 @@ const TransactionPlusHistory = (props) => {
             </div>
             <div className="tranPlusHisMid">
                 {
-                    Renderwhat == "transaction" ? MyTransactionHisData.map((item) => {
+                    Renderwhat === "transaction" ? MyTransactionHisData.map((item) => {
                         return(
-                        <div className="transactionHistoryItems">
+                        <div className="transactionHistoryItems" key={item.id}>
                             <div className="transactionHistoryItemsLeft">
                                 <div className="transactionHistoryItemsLeftLeft">
                                     <img src={item.statusimg} alt="user" />
@@ -38,7 +37,7 @@ const TransactionPlusHistory = (props) => {
                             </div>
                             <div className="transactionHistoryItemsRight">
                                 <h5>+{item.ammount}</h5>
-                                {item.status == true ? <span className='transactionCompleted'>Completed</span> : <span className='transactionDeclined'>Declined</span>}
+                                {item.status === true ? <span className='transactionCompleted'>Completed</span> : <span className='transactionDeclined'>Declined</span>}
                             </div>
                         </div>
                         )
@@ -46,7 +45,7 @@ const TransactionPlusHistory = (props) => {
                      : 
                      MyTransactionHisData.map((item) => {
                         return(
-                        <div className="transactionHistoryItems">
+                        <div className="transactionHistoryItems" key={item.id}>
                             <div className="transactionHistoryItemsLeft">
                                 <div className="transactionHistoryItemsLeftLeft">
                                     <img src={item.img} alt="user" />
@@ -57,16 +56,16 @@ const TransactionPlusHistory = (props) => {
                                 </div>
                             </div>
                             <div className="transactionUserItemsRight">
-                                <a href='#'><AiOutlineMail /></a>
-                                <a href='#'><FiSlash /></a>
-                                <a href='#'><FiUser /></a>
+                                <Link to='#'><AiOutlineMail /></Link>
+                                <Link to='#'><FiSlash /></Link>
+                                <Link to='#'><FiUser /></Link>
                             </div>
                         </div>
                         )
                     })
                 }
                 <div className="viewAllTransactions">
-                    <a href="#">view all transactions</a>
+                    <Link to="#">view all transactions</Link>
                 </div>
             </div>
             <div className="tranPlusHisBottom"></div>

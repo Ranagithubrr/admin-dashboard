@@ -138,7 +138,28 @@
 .mainNavigation{
     display: none;
 }
-
+.dropdown-menu-inner-area{
+    display: flex;
+    flex-direction: row;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.dropdown-menu-inner-area div:nth-child(1){
+   min-width:190px;
+   padding-right: 20px;
+}
+.inner-right{
+    padding-left:20px;
+    border-left:1px solid #d1d1d1a8;
+}
+.dropdown-menu-inner h4{
+    font-size: 11px;
+    font-weight: 600;
+    color: #a2aab5cd;
+    text-transform: uppercase;
+    /* margin-top: 10px; */
+}
 @media screen and (max-width:768px) {
     .dropdown .triangle {
         top: 32px;
@@ -161,7 +182,7 @@
         position: fixed;
         height: 100vh;
         width: 200px;
-        left: -1000px;
+        left: -100%;
         top: 0;
         background: #262626;
         transition: 0.5s ease;
@@ -203,6 +224,8 @@
 
     .dropdown .show {
         display: block;
+        padding-top: 0;
+        margin-left: 10px;
     }
 
     .middle ul {
@@ -221,9 +244,9 @@
         padding-top: 20px;
     }
 
-    .middle ul li a,
-    .dropdown-menu a {
+    .middle ul li a{
         color: #ffffffc0;
+        text-decoration: none;
     }
 
     #crossIcon {
@@ -252,20 +275,37 @@
         color: wheat;
     }
 
-    .dropdown .dropLink {
+    .dropdown .dropLink{
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
+    .dropdown .dropLink .menuText, .menuText{
+        padding-left: 15px;
 
+    }
+    .dropdown .dropLink .icon , .icon{
+        font-size: 20px;
+    }
     .mainNavigation {
         display: block;
-        font-size: 17px;
+        font-size: 14px;
         font-weight: 600;
         color: #8392a5;
         text-transform: uppercase;
         padding-left: 15px;
         padding-top: 25px;
         margin-bottom: 0;
+    }
+    .dropdown-menu-inner-area{
+        display: flex;
+        margin-top: 0;
+        flex-direction: column;
+    }
+    .inner-right{
+        padding-left: 0;
+        margin-left: 0;
+        margin-top: 10px;
+        border:none;
     }
 }

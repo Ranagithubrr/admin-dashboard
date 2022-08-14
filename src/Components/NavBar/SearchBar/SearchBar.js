@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from 'react';
+import React from 'react';
 import { useState, useEffect } from 'react';
 import './SearchBar.css';
 
@@ -6,9 +6,13 @@ const SearchBar = (props) => {
     
     const {Searchshow,OverlayFunc} = props;
     useEffect(()=>{
-        console.log('value changed, the value is ', Searchshow);
+        // console.log('value changed, the value is ', Searchshow);
         setSearchTrigger('')
     },[Searchshow]);
+    useEffect(()=>{
+        // console.log('value changed, the value is ', Searchshow);
+        setSearchTrigger('hidesearchBarArea')
+    },[]);
     
     
 
@@ -25,12 +29,12 @@ const SearchBar = (props) => {
         <div className={`searchbarArea ${searchTrigger}`}>
             <form action="#" className='form'>
                 <input type="text" placeholder='Type and hit enter to search' />
-                <button type="submit"><i class="fas fa-search"></i></button>
-                <button className='closeIcon'><i class="fas fa-times" onClick={()=> closebtnclicked()}></i></button>
+                <button type="submit"><i className="fas fa-search"></i></button>
+                <button className='closeIcon'><i className="fas fa-times" onClick={()=> closebtnclicked()}></i></button>
             </form>
             <div className="recentSearchArea">
                 <h6>RECENT SEARCHES</h6>
-                <button class="firstbtn">modern dashboard</button>
+                <button className="firstbtn">modern dashboard</button>
                 <button>calender app</button>
                 <button>modal examples</button>
                 <button>avatar</button>

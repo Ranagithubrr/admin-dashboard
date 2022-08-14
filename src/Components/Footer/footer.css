@@ -1,8 +1,9 @@
-.fotoer{
+.footer{
     display: flex;
     justify-content: space-between;
     background-color:#ebebeb;
     padding:10px 30px;
+    flex-direction: row;
 }
 .footerLeft span{
     font-size: 12px;
@@ -13,4 +14,12 @@
     font-size: 12px;
     padding-right:15px;
     text-decoration: none;
+}
+
+@media screen and (max-width:768px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        text-align:center;
+    }
 }

@@ -60,7 +60,7 @@ const SignUp = () => {
                     </form>
             </div>
             <div className="col-8 signupAvatarArea">
-                <img src={SignUpAvater} alt="sign up image here" className='signupAvatar img-fluid'/>
+                <img src={SignUpAvater} alt="sign up pic here" className='signupAvatar img-fluid'/>
             </div>
             </div>
             

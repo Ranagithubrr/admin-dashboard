@@ -28,7 +28,18 @@
 }
 
 @media screen and (max-width:768px) {
-    .downloadEarnings{
-        margin:0;
+    .downloadEarnings {
+        margin: 0;
+        padding: 20px 10px;
+    }
+    .downloadEarningsLeft {
+        width: 40%;
+    }
+    .downloadEarningsLeft span {
+        font-size: 40px;
+        display: block;
+        margin-top: 40px;
+        margin-right: 20px;
+        color: rgb(192, 204, 218);
     }
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import './MainHome.css';
-import { AiOutlineMail, AiOutlinePrinter, AiOutlineFileText } from 'react-icons/all';
 import TopBar from './HomeComponents/TopBar/TopBar';
 import Conversion from './HomeComponents/ConversionRateCard/Conversion';
 import RevenueGroth from './HomeComponents/RevenueGrowth/RevenueGroth';

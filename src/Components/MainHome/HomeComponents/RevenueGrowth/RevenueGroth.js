@@ -1,6 +1,7 @@
 import React from 'react';
 import RevenueChart from './RevenueChart/RevenueChart';
 import './RevenueGroth.css';
+import {Link} from 'react-router-dom';
 
 const RevenueGroth = () => {
     return (
@@ -23,12 +24,12 @@ const RevenueGroth = () => {
                 <div className="midGrowthLeft">
                     <h2>$620,076</h2>
                     <h5>MRR GROWTH</h5>
-                    <p>Measure How Fast You’re Growing Monthly Recurring Revenue. <a href="#">Learn More</a></p>
+                    <p>Measure How Fast You’re Growing Monthly Recurring Revenue. <Link to="#">Learn More</Link></p>
                 </div>
                 <div className="midGrowthRight">
                 <h2>$1,200</h2>
                     <h5>AVG. MRR/CUSTOMER</h5>
-                    <p>The revenue generated per account on a monthly or yearly basis. <a href="#"> Learn More</a></p>
+                    <p>The revenue generated per account on a monthly or yearly basis. <Link to="#"> Learn More</Link></p>
                 </div>
             </div>
             <div className="bottomGrowth">

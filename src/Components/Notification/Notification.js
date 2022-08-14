@@ -1,11 +1,11 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Avatar from '@mui/material/Avatar';
 import Menu from '@mui/material/Menu';
-import { AiOutlineEdit, FiUser, BiHelpCircle, FaForumbee, FiSettings, GoSignOut, MdNotificationsNone, BsChatSquare } from 'react-icons/all';
+import {MdNotificationsNone, BsChatSquare } from 'react-icons/all';
 import Badge from '@mui/material/Badge';
 import './Notification.css';
 import notificationData from '../../Data/Notification.json';
+import {Link} from 'react-router-dom';
 
 const Notification = (props) => {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -18,7 +18,7 @@ const Notification = (props) => {
     };
     const notiData = notificationData.slice(1, 7);
     // console.log(notiData);
-    const {IconName,DisplayName} = props;
+    const { IconName, DisplayName } = props;
     // console.log(typeof(IconName));
     return (
         <React.Fragment>
@@ -34,9 +34,9 @@ const Notification = (props) => {
                 >
                     <Badge color="warning" badgeContent={9}>
                         {
-                             IconName === "MdNotificationsNone" ? <MdNotificationsNone /> : <BsChatSquare />
+                            IconName === "MdNotificationsNone" ? <MdNotificationsNone /> : <BsChatSquare />
                         }
-                        
+
                     </Badge>
                 </span>
             </Box>
@@ -83,26 +83,26 @@ const Notification = (props) => {
                     <div className="mid">
                         {
                             notiData.map(data => {
-                                return(
-                                    <div className="row notificationSingleArea">
-                                    <div className="col-2">
-                                        <img src={data.userimg} alt="user" className='notiUserImg' />
+                                return (
+                                    <div className="row notificationSingleArea" key={data.id}>
+                                        <div className="col-2">
+                                            <img src={data.userimg} alt="user" className='notiUserImg' />
+                                        </div>
+                                        <div className="col-10 notifications">
+                                            <span className="notificationName">{data.notiname}</span>
+                                            <p>{data.text}</p>
+                                            <span className='dateTime'>Mar 15 12:32 pm</span>
+                                        </div>
                                     </div>
-                                    <div className="col-10 notifications">
-                                        <span className="notificationName">{data.notiname}</span>
-                                        <p>{data.text}</p>
-                                        <span className='dateTime'>Mar 15 12:32 pm</span>
-                                    </div>
-                                </div>
                                 )
-                                
+
                             })
                         }
 
                     </div>
                     <hr />
                     <div className="bottom">
-                        <a className='allNotificationTitle mt-2 text-center d-b'>View all {DisplayName}</a>
+                        <Link to="#" className='allNotificationTitle mt-2 text-center d-b'>View all {DisplayName}</Link>
                     </div>
                 </div>
             </Menu>

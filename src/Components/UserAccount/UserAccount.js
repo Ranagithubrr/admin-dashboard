@@ -3,7 +3,6 @@ import {Link } from "react-router-dom";
 
 import './UserAccount.css';
 import Box from '@mui/material/Box';
-import Avatar from '@mui/material/Avatar';
 import Menu from '@mui/material/Menu';
 import {AiOutlineEdit,FiUser,BiHelpCircle,FaForumbee,FiSettings,GoSignOut} from 'react-icons/all';
 
@@ -70,13 +69,13 @@ export default function UserAccount() {
         <img src="https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg" alt="userPhoto" className='userPhoto'/>
         <h4 className='userName'>Masud Rana</h4>
         <span className='userTitle'>Web Developer</span>
-        <a href="#"><span><AiOutlineEdit /></span>Edit Profile</a>
-        <a href="#"><span><FiUser /></span>View Profile</a>
+        <Link to="#"><span><AiOutlineEdit /></span>Edit Profile</Link>
+        <Link to="#"><span><FiUser /></span>View Profile</Link>
         <hr />
-        <a href="#"><span><BiHelpCircle /></span>Help Center</a>
-        <a href="#"><span><FaForumbee /></span>Forum</a>
-        <a href="#"><span><FiSettings /></span>Account Setting</a>
-        <a href="#"><span><FiSettings /></span>Privacy Setting</a>
+        <Link to="#"><span><BiHelpCircle /></span>Help Center</Link>
+        <Link to="#"><span><FaForumbee /></span>Forum</Link>
+        <Link to="#"><span><FiSettings /></span>Account Setting</Link>
+        <Link to="#"><span><FiSettings /></span>Privacy Setting</Link>
         <Link to="/signin"><span><GoSignOut /></span>Sign Out</Link>
        </div>
       </Menu>

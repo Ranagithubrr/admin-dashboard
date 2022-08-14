@@ -26,5 +26,12 @@
     .signupAvatarArea{
         display: none;
     }
+    .signUp, .signIn{
+        height:auto;
+        padding-top: 20px;
+    }
+    .createNewAccount {
+        font-size: 24px;
+    }
 }
 

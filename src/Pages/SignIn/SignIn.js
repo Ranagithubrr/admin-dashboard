@@ -23,7 +23,7 @@ const SignIn = () => {
                         <div className="inputFields mt-3">
                             <div className="passwordBlock">
                                 <label htmlFor="password">Password</label>
-                                <a href="#">Forgot password?</a>
+                                <Link to="#">Forgot password?</Link>
                             </div>
 
                             <input type="password" placeholder='Enter your password' name="password" id="password" />
